@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "script": "train_test_ablation_encoderoptimization.py",
+  "parameters": [
+    {
+      "name": "experiments_json",
+      "value": "./data/splits/experiments.json"
+    },
+    {
+      "name": "splits_root",
+      "value": "./data/splits"
+    },
+    {
+      "name": "image_root",
+      "value": "./img_patch"
+    },
+    {
+      "name": "ifft_root",
+      "value": "./ifft_patch"
+    },
+    {
+      "name": "sample_format",
+      "value": "npy"
+    },
+    {
+      "name": "image_sample_format",
+      "value": "npy"
+    },
+    {
+      "name": "ifft_sample_format",
+      "value": "npy"
+    },
+    {
+      "name": "label_mode",
+      "value": "binary"
+    },
+    {
+      "name": "real_mod",
+      "value": "real"
+    },
+    {
+      "name": "gpu_ids",
+      "value": "0"
+    },
+    {
+      "name": "grid_size",
+      "value": "2,2,2"
+    },
+    {
+      "name": "proj_dim",
+      "value": 512
+    },
+    {
+      "name": "class_head",
+      "value": "linear"
+    },
+    {
+      "name": "encoder_lr",
+      "value": 0.00001
+    },
+    {
+      "name": "ifft_norm_mode",
+      "value": true
+    },
+    {
+      "name": "ifft_norm_stats_csv",
+      "value": "./data/ifft_train_stats_alpha075.csv"
+    },
+    {
+      "name": "output_dir",
+      "value": "./runs"
+    }
+  ]
+}

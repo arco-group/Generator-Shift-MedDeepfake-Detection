@@ -1,0 +1,17 @@
+# SPECTRE source snapshot
+
+This directory contains a frozen snapshot of the SPECTRE source code used to
+extract the embeddings employed in this work.
+
+## Source information
+
+- Original project: SPECTRE
+- Original repository: https://github.com/cclaess/SPECTRE
+- Included upstream directory: `src/spectre`
+- Upstream commit: Unknown
+- Retrieval date: Unknown
+- License: MIT; see `LICENSE.md` in this directory
+
+The upstream repository has subsequently been updated. This snapshot is
+retained unchanged to preserve compatibility with the implementation used in
+the experiments and may differ from the current upstream version.

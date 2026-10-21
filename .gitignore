@@ -1,0 +1,30 @@
+# OS
+__pycache__/
+*.pyc
+.DS_Store
+.vscode/
+.idea/
+.venv/
+
+# Runtime artifacts
+embeddings/
+img_patch/
+ifft_patch/
+runs/
+*.pt
+*.ckpt
+*.npy
+
+# Slurm/cluster outputs
+*.out
+*.err
+*.log
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/

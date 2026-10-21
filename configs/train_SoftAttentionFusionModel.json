@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "script": "train_SoftAttentionFusionModel.py",
+  "parameters": [
+    {
+      "name": "experiments_json",
+      "value": "./data/splits/experiments.json"
+    },
+    {
+      "name": "splits_root",
+      "value": "./data/splits/"
+    },
+    {
+      "name": "image_root",
+      "value": "./embeddings/embs_img"
+    },
+    {
+      "name": "ifft_root",
+      "value": "./embeddings/embs_ifft"
+    },
+    {
+      "name": "label_mode",
+      "value": "binary"
+    },
+    {
+      "name": "real_mod",
+      "value": "real"
+    },
+    {
+      "name": "gpu_ids",
+      "value": "0"
+    },
+    {
+      "name": "fusion_arch",
+      "value": "int_soft_attention"
+    },
+    {
+      "name": "class_head",
+      "value": "linear"
+    },
+    {
+      "name": "proj_dim",
+      "value": 512
+    },
+    {
+      "name": "output_dir",
+      "value": "./runs"
+    }
+  ]
+}

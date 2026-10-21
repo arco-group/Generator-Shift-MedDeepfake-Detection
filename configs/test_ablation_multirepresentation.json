@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "script": "test_ablation_multirepresentation.py",
+  "parameters": [
+    {
+      "name": "experiments_json",
+      "value": "./data/splits/experiments.json"
+    },
+    {
+      "name": "splits_root",
+      "value": "./data/splits/"
+    },
+    {
+      "name": "sample_root",
+      "value": "./embeddings/embs_img"
+    },
+    {
+      "name": "emb_kind",
+      "value": "embs_img"
+    },
+    {
+      "name": "label_mode",
+      "value": "binary"
+    },
+    {
+      "name": "real_mod",
+      "value": "real"
+    },
+    {
+      "name": "gpu_ids",
+      "value": "0"
+    },
+    {
+      "name": "fc_arch",
+      "value": "linear"
+    },
+    {
+      "name": "output_dir",
+      "value": "./runs"
+    },
+    {
+      "name": "checkpoint_name",
+      "value": "model.pt"
+    }
+  ]
+}

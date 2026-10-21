@@ -1,0 +1,53 @@
+{
+  "real_mod": "real",
+  "experiments": [
+    {
+      "name": "OOD-Arch-RCDvsRP",
+      "family": "OOD-Architecture",
+      "id_mods": ["real", "cycle", "diffusion"],
+      "ood_mods": ["real", "pix2pix"]
+    },
+    {
+      "name": "OOD-Arch-RPDvsRC",
+      "family": "OOD-Architecture",
+      "id_mods": ["real", "pix2pix", "diffusion"],
+      "ood_mods": ["real", "cycle"]
+    },
+    {
+      "name": "OOD-Paradigm-RCPvsRD",
+      "family": "OOD-Paradigm",
+      "id_mods": ["real", "cycle", "pix2pix"],
+      "ood_mods": ["real", "diffusion"]
+    },
+    {
+      "name": "OOD-Paradigm-RDvsRCP",
+      "family": "OOD-Paradigm",
+      "id_mods": ["real", "diffusion"],
+      "ood_mods": ["real", "cycle", "pix2pix"]
+    },
+    {
+      "name": "OOD-Paradigm-RCvsRD",
+      "family": "OOD-Paradigm",
+      "id_mods": ["real", "cycle"],
+      "ood_mods": ["real", "diffusion"]
+    },
+    {
+      "name": "OOD-Paradigm-RPvsRD",
+      "family": "OOD-Paradigm",
+      "id_mods": ["real", "pix2pix"],
+      "ood_mods": ["real", "diffusion"]
+    },
+    {
+      "name": "OOD-Paradigm-RDvsRC",
+      "family": "OOD-Paradigm",
+      "id_mods": ["real", "diffusion"],
+      "ood_mods": ["real", "cycle"]
+    },
+    {
+      "name": "OOD-Paradigm-RDvsRP",
+      "family": "OOD-Paradigm",
+      "id_mods": ["real", "diffusion"],
+      "ood_mods": ["real", "pix2pix"]
+    }
+  ]
+}

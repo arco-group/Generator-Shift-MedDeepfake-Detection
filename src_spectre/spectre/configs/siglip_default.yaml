@@ -1,0 +1,65 @@
+train:
+  batch_size_per_gpu: 128
+  grad_accum_steps: 1
+  datasets:
+  - ct_rate
+  - inspect
+  - merlin
+  data_dir: /data/
+  data_fraction: 1.0
+  output_dir: .
+  saveckp_freq: 5
+  resume_ckp: true
+  seed: 0
+  num_workers: 10
+  load_fp16: true
+  pin_memory: true
+  persistent_workers: true
+  drop_last: true
+  use_thread: false
+  cache_dataset: true
+  cache_dir: /data/cache/monai/
+  use_gds: false
+  log_wandb: true
+  log_freq: 1
+  log_grad_freq: 100
+optim:
+  epochs: 100
+  weight_decay: 0.01
+  base_lr: 0.001
+  lr: 0.  # will be set after applying scaling rule
+  warmup_epochs: 10
+  freeze_backbone_epochs: 10  # -1 means fully freeze backbone
+  min_lr: 1.0e-06
+  llrd_factor: 0.9
+  patch_embed_lr_mult: 0.2
+  projection_head_wd_mult: 1.0
+  clip_grad_norm: 1.0
+  scaling_rule: sqrt_wrt_1024
+  adamw_beta1: 0.9
+  adamw_beta2: 0.95
+model:
+  architecture: vit_large_patch16_128
+  pretrained_weights: null
+  layer_scale_init_value: 1e-3
+  use_feature_comb: true
+  feature_comb_embed_dim: 1080
+  feature_comb_num_layers: 4
+  feature_comb_num_heads: 12
+  text_tokenizer: Qwen/Qwen3-Embedding-0.6B
+  text_encoder_weights: /data/checkpoints/Qwen/Qwen3-Embedding-0.6B/model.safetensors
+  use_lora: true
+  lora_r: 16
+  lora_alpha: 64
+  lora_dropout: 0.05
+  lora_target_keywords:
+  - q_proj
+  - k_proj
+  - v_proj
+  - o_proj
+  projection_dim: 512
+  learnable_t: true
+  learnable_b: true
+  init_t: 2.3026  # ~log(10)
+  init_b: -10.0
+  normalize: true

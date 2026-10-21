@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "description": "Shared training hyperparameters across all training scripts.",
+  "parameters": [
+    {
+      "name": "batch_size", 
+      "value": 8
+    },
+    {
+      "name": "num_workers", 
+      "value": 4
+    },
+    {
+      "name": "seeds",
+      "value": "42,43,44,45,46"
+    },
+    {
+      "name": "lr", 
+      "value": 0.0001
+    },
+    {
+      "name": "wd", 
+      "value": 0.0001
+    },
+    {
+      "name": "lr_scheduler", 
+      "value": "plateau"
+    },
+    {
+      "name": "lr_factor", 
+      "value": 0.5
+    },
+    {
+      "name": "lr_patience",
+      "value": 5
+    },
+    {
+      "name": "min_lr", 
+      "value": 1e-06
+    },
+    {
+      "name": "early_stop", 
+      "value": false
+    },
+    {
+      "name": "save_epoch",
+      "value": 1
+    },
+    {
+      "name": "epochs", 
+      "value": 100
+    },
+    {
+      "name": "amp",  
+      "value": false
+    }
+  ]
+}

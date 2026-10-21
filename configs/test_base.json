@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "description": "Shared test hyperparameters across all test scripts.",
+  "parameters": [
+    {
+      "name": "batch_size",
+      "value": 8
+    },
+    {
+      "name": "num_workers",
+      "value": 4
+    },
+    {
+      "name": "seeds",
+      "value": "42,43,44,45,46"
+    }
+  ]
+}
