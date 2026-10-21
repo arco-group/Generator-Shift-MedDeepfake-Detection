@@ -261,7 +261,7 @@ python scripts/test_SoftAttentionFusionModel.py \
 #### Notes
 
 Configuration priority is:
-- command-line arguments override everything else
+- command-line arguments override values from the configuration files
 - values not provided explicitly fall back to the parser defaults
 
 
